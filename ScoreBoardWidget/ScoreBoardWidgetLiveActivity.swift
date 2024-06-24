@@ -9,30 +9,17 @@ import ActivityKit
 import WidgetKit
 import SwiftUI
 
-struct ScoreBoardWidgetAttributes: ActivityAttributes {
-    public struct ContentState: Codable, Hashable {
-        // Dynamic stateful properties about your activity go here!
-        var emoji: String
-    }
-
-    // Fixed non-changing properties about your activity go here!
-    var name: String
-}
-
 struct ScoreBoardWidgetLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: ScoreBoardWidgetAttributes.self) { context in
-            // Lock screen/banner UI goes here
+        ActivityConfiguration(for: MatchAttributes.self) { context in
             VStack {
-                Text("Hello \(context.state.emoji)")
+                Text("Hello")
             }
             .activityBackgroundTint(Color.cyan)
             .activitySystemActionForegroundColor(Color.black)
 
         } dynamicIsland: { context in
             DynamicIsland {
-                // Expanded UI goes here.  Compose the expanded UI through
-                // various regions, like leading/trailing/center/bottom
                 DynamicIslandExpandedRegion(.leading) {
                     Text("Leading")
                 }
@@ -40,41 +27,57 @@ struct ScoreBoardWidgetLiveActivity: Widget {
                     Text("Trailing")
                 }
                 DynamicIslandExpandedRegion(.bottom) {
-                    Text("Bottom \(context.state.emoji)")
+                    Text("Bottom")
                     // more content
                 }
             } compactLeading: {
                 Text("L")
             } compactTrailing: {
-                Text("T \(context.state.emoji)")
+                Text("T")
             } minimal: {
-                Text(context.state.emoji)
+                Text("A")
             }
-            .widgetURL(URL(string: "http://www.apple.com"))
-            .keylineTint(Color.red)
         }
     }
 }
 
-extension ScoreBoardWidgetAttributes {
-    fileprivate static var preview: ScoreBoardWidgetAttributes {
-        ScoreBoardWidgetAttributes(name: "World")
+extension MatchAttributes {
+    fileprivate static var preview: MatchAttributes {
+        MatchAttributes(title: "LaLiga", leagueImage: "la-liga")
     }
 }
 
-extension ScoreBoardWidgetAttributes.ContentState {
-    fileprivate static var smiley: ScoreBoardWidgetAttributes.ContentState {
-        ScoreBoardWidgetAttributes.ContentState(emoji: "😀")
-     }
-     
-     fileprivate static var starEyes: ScoreBoardWidgetAttributes.ContentState {
-         ScoreBoardWidgetAttributes.ContentState(emoji: "🤩")
-     }
-}
-
-#Preview("Notification", as: .content, using: ScoreBoardWidgetAttributes.preview) {
+#Preview("Content", as: .content, using: MatchAttributes.preview) {
    ScoreBoardWidgetLiveActivity()
 } contentStates: {
-    ScoreBoardWidgetAttributes.ContentState.smiley
-    ScoreBoardWidgetAttributes.ContentState.starEyes
+    let homeTeam: Team = .init(name: "Barcelona", image: "barcelona", score: 0)
+    let awayTeam: Team = .init(name: "Real Marid", image: "real-marid", score: 0)
+    MatchAttributes.ContentState(match: .init(homeTeam: homeTeam, awayTeam: awayTeam, leagueName: "LaLiga"))
 }
+
+#Preview("Expended", as: .dynamicIsland(.expanded), using: MatchAttributes.preview) {
+   ScoreBoardWidgetLiveActivity()
+} contentStates: {
+    let homeTeam: Team = .init(name: "Barcelona", image: "barcelona", score: 0)
+    let awayTeam: Team = .init(name: "Real Marid", image: "real-marid", score: 0)
+    MatchAttributes.ContentState(match: .init(homeTeam: homeTeam, awayTeam: awayTeam, leagueName: "LaLiga"))
+}
+
+#Preview("Compact", as: .dynamicIsland(.compact), using: MatchAttributes.preview) {
+   ScoreBoardWidgetLiveActivity()
+} contentStates: {
+    let homeTeam: Team = .init(name: "Barcelona", image: "barcelona", score: 0)
+    let awayTeam: Team = .init(name: "Real Marid", image: "real-marid", score: 0)
+    MatchAttributes.ContentState(match: .init(homeTeam: homeTeam, awayTeam: awayTeam, leagueName: "LaLiga"))
+}
+
+#Preview("Minimal", as: .dynamicIsland(.minimal), using: MatchAttributes.preview) {
+   ScoreBoardWidgetLiveActivity()
+} contentStates: {
+    let homeTeam: Team = .init(name: "Barcelona", image: "barcelona", score: 0)
+    let awayTeam: Team = .init(name: "Real Marid", image: "real-marid", score: 0)
+    MatchAttributes.ContentState(match: .init(homeTeam: homeTeam, awayTeam: awayTeam, leagueName: "LaLiga"))
+}
+
+
+

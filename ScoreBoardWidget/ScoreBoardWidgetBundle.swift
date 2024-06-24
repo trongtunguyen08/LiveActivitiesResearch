@@ -11,7 +11,6 @@ import SwiftUI
 @main
 struct ScoreBoardWidgetBundle: WidgetBundle {
     var body: some Widget {
-        ScoreBoardWidget()
         ScoreBoardWidgetLiveActivity()
     }
 }

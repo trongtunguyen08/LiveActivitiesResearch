@@ -11,7 +11,40 @@
 		E1C2C9052C26D90D008AC208 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2C9042C26D90D008AC208 /* ContentView.swift */; };
 		E1C2C9072C26D90F008AC208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C2C9062C26D90F008AC208 /* Assets.xcassets */; };
 		E1C2C90A2C26D90F008AC208 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C2C9092C26D90F008AC208 /* Preview Assets.xcassets */; };
+		E1C2C93B2C26EE3C008AC208 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2C93A2C26EE3C008AC208 /* Match.swift */; };
+		E1C2C9642C273A28008AC208 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C2C9242C26ED8C008AC208 /* WidgetKit.framework */; };
+		E1C2C9652C273A28008AC208 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C2C9262C26ED8C008AC208 /* SwiftUI.framework */; };
+		E1C2C9682C273A28008AC208 /* ScoreBoardWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2C9672C273A28008AC208 /* ScoreBoardWidgetBundle.swift */; };
+		E1C2C96A2C273A28008AC208 /* ScoreBoardWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2C9692C273A28008AC208 /* ScoreBoardWidgetLiveActivity.swift */; };
+		E1C2C96E2C273A2B008AC208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C2C96D2C273A2B008AC208 /* Assets.xcassets */; };
+		E1C2C9722C273A2B008AC208 /* ScoreBoardWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E1C2C9632C273A28008AC208 /* ScoreBoardWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E1C2C9762C273A57008AC208 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2C93A2C26EE3C008AC208 /* Match.swift */; };
+		E1C2C9772C273D40008AC208 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1C2C9062C26D90F008AC208 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1C2C9702C273A2B008AC208 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1C2C8F72C26D90D008AC208 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1C2C9622C273A28008AC208;
+			remoteInfo = ScoreBoardWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E1C2C9382C26ED8F008AC208 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E1C2C9722C273A2B008AC208 /* ScoreBoardWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E1C2C8FF2C26D90D008AC208 /* LiveActivitiesResearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveActivitiesResearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +52,15 @@
 		E1C2C9042C26D90D008AC208 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1C2C9062C26D90F008AC208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1C2C9092C26D90F008AC208 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1C2C9242C26ED8C008AC208 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E1C2C9262C26ED8C008AC208 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E1C2C93A2C26EE3C008AC208 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		E1C2C93D2C26F657008AC208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E1C2C9632C273A28008AC208 /* ScoreBoardWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ScoreBoardWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1C2C9672C273A28008AC208 /* ScoreBoardWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardWidgetBundle.swift; sourceTree = "<group>"; };
+		E1C2C9692C273A28008AC208 /* ScoreBoardWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreBoardWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		E1C2C96D2C273A2B008AC208 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1C2C96F2C273A2B008AC208 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +71,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1C2C9602C273A28008AC208 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C2C9652C273A28008AC208 /* SwiftUI.framework in Frameworks */,
+				E1C2C9642C273A28008AC208 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -36,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				E1C2C9012C26D90D008AC208 /* LiveActivitiesResearch */,
+				E1C2C9662C273A28008AC208 /* ScoreBoardWidget */,
+				E1C2C9232C26ED8C008AC208 /* Frameworks */,
 				E1C2C9002C26D90D008AC208 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E1C2C8FF2C26D90D008AC208 /* LiveActivitiesResearch.app */,
+				E1C2C9632C273A28008AC208 /* ScoreBoardWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,6 +105,8 @@
 		E1C2C9012C26D90D008AC208 /* LiveActivitiesResearch */ = {
 			isa = PBXGroup;
 			children = (
+				E1C2C93D2C26F657008AC208 /* Info.plist */,
+				E1C2C9392C26EE32008AC208 /* Models */,
 				E1C2C9022C26D90D008AC208 /* LiveActivitiesResearchApp.swift */,
 				E1C2C9042C26D90D008AC208 /* ContentView.swift */,
 				E1C2C9062C26D90F008AC208 /* Assets.xcassets */,
@@ -67,6 +123,34 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E1C2C9232C26ED8C008AC208 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2C9242C26ED8C008AC208 /* WidgetKit.framework */,
+				E1C2C9262C26ED8C008AC208 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1C2C9392C26EE32008AC208 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2C93A2C26EE3C008AC208 /* Match.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E1C2C9662C273A28008AC208 /* ScoreBoardWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2C9672C273A28008AC208 /* ScoreBoardWidgetBundle.swift */,
+				E1C2C9692C273A28008AC208 /* ScoreBoardWidgetLiveActivity.swift */,
+				E1C2C96D2C273A2B008AC208 /* Assets.xcassets */,
+				E1C2C96F2C273A2B008AC208 /* Info.plist */,
+			);
+			path = ScoreBoardWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,15 +161,34 @@
 				E1C2C8FB2C26D90D008AC208 /* Sources */,
 				E1C2C8FC2C26D90D008AC208 /* Frameworks */,
 				E1C2C8FD2C26D90D008AC208 /* Resources */,
+				E1C2C9382C26ED8F008AC208 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E1C2C9712C273A2B008AC208 /* PBXTargetDependency */,
 			);
 			name = LiveActivitiesResearch;
 			productName = LiveActivitiesResearch;
 			productReference = E1C2C8FF2C26D90D008AC208 /* LiveActivitiesResearch.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E1C2C9622C273A28008AC208 /* ScoreBoardWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1C2C9732C273A2B008AC208 /* Build configuration list for PBXNativeTarget "ScoreBoardWidgetExtension" */;
+			buildPhases = (
+				E1C2C95F2C273A28008AC208 /* Sources */,
+				E1C2C9602C273A28008AC208 /* Frameworks */,
+				E1C2C9612C273A28008AC208 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoreBoardWidgetExtension;
+			productName = ScoreBoardWidgetExtension;
+			productReference = E1C2C9632C273A28008AC208 /* ScoreBoardWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -98,6 +201,9 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					E1C2C8FE2C26D90D008AC208 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E1C2C9622C273A28008AC208 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -116,6 +222,7 @@
 			projectRoot = "";
 			targets = (
 				E1C2C8FE2C26D90D008AC208 /* LiveActivitiesResearch */,
+				E1C2C9622C273A28008AC208 /* ScoreBoardWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +237,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1C2C9612C273A28008AC208 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C2C9772C273D40008AC208 /* Assets.xcassets in Resources */,
+				E1C2C96E2C273A2B008AC208 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,10 +255,29 @@
 			files = (
 				E1C2C9052C26D90D008AC208 /* ContentView.swift in Sources */,
 				E1C2C9032C26D90D008AC208 /* LiveActivitiesResearchApp.swift in Sources */,
+				E1C2C93B2C26EE3C008AC208 /* Match.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1C2C95F2C273A28008AC208 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1C2C96A2C273A28008AC208 /* ScoreBoardWidgetLiveActivity.swift in Sources */,
+				E1C2C9682C273A28008AC208 /* ScoreBoardWidgetBundle.swift in Sources */,
+				E1C2C9762C273A57008AC208 /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1C2C9712C273A2B008AC208 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1C2C9622C273A28008AC208 /* ScoreBoardWidgetExtension */;
+			targetProxy = E1C2C9702C273A2B008AC208 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E1C2C90B2C26D90F008AC208 /* Debug */ = {
@@ -267,6 +402,7 @@
 		E1C2C90E2C26D90F008AC208 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -275,6 +411,9 @@
 				DEVELOPMENT_TEAM = AA8W5738RS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveActivitiesResearch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,6 +435,7 @@
 		E1C2C90F2C26D90F008AC208 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +444,9 @@
 				DEVELOPMENT_TEAM = AA8W5738RS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveActivitiesResearch/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +459,60 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.trongtunguyen08.LiveActivitiesResearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1C2C9742C273A2B008AC208 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AA8W5738RS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScoreBoardWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScoreBoardWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trongtunguyen08.LiveActivitiesResearch.ScoreBoardWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1C2C9752C273A2B008AC208 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AA8W5738RS;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScoreBoardWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ScoreBoardWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.trongtunguyen08.LiveActivitiesResearch.ScoreBoardWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,6 +536,15 @@
 			buildConfigurations = (
 				E1C2C90E2C26D90F008AC208 /* Debug */,
 				E1C2C90F2C26D90F008AC208 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1C2C9732C273A2B008AC208 /* Build configuration list for PBXNativeTarget "ScoreBoardWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1C2C9742C273A2B008AC208 /* Debug */,
+				E1C2C9752C273A2B008AC208 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
